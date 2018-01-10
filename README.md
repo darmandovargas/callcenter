@@ -31,7 +31,7 @@ El test unitario está dentro del test de la aplicación, allí se crea una inst
 ### Breve Descripción de lo que se hizo
 Se hizo una revisión exaustiva del probléma clásico de Java, el cual es bastante similar al del ejercicio, con lo que se determinó que la importancia del test estaba en la evaluación del patrón arquitectónico Chain of Resonsability, por medio del cual hay una clase abastracta llamada Employee la cual tiene métodos abstráctos y métodos definidos, como el de setSuccessor el cual asigna quien sigue ascendentemente en la cadena de mando, de ésta clase abstracta extienden las diferentes entidades de la cadena de mando que son Operador, Supervisor y Director, por lo que su construcción debe ser mutuamente dependientes para que se pueda escalar la llamada según criterios de disponibilidad de los operadores así:
 
-```java
+```ruby
 Operador operador = new Operador("Empleado # "+x, "Operador", 1);
 Supervisor supervisor = new Supervisor("Empleado # "+x, "Supervisor", 2);
 Director director = new Director("Empleado # "+x, "Director", 3);
