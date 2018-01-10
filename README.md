@@ -44,7 +44,7 @@ Con ésto relacionamos las entidades con la siguiente línea ascendente en la ca
 
 También se determinó que era importante denotar el conocimiento de hilos concurrentes y el manejo de variables estáticas desde diferentes hilos, por lo cual para los hilos se utilizó el servicio de creación de hilos de java llamado ExecutorService, por medio del cual se ejecuta el método definido de la clase abstracta Employee que procesa la llamada (processCallRequest), el cual está presente en todos sus hijos (Operador, Supervisor, Director) y se utiliza de manera recursiva a medida que se escalan según disponibilidad de cada tipo de empleado, para lo cual se utilizan contadores de cada tipo de empleado según su disponibilidad, y para evitar problemas de integridad en el incremento o decremento de éstas variables según se deba aplicar (bien sea porque el empleado se ocupa o se desocupa de la llamada), se utilizaron variables tipo AtomicInteger con el fin de coordinar el acceso de los hilos a éstas variables y evitar problemas en la integridad del valor debido a la concurrencia de los hilos, así:
 
-```java
+```ruby
 public static AtomicInteger operadoresDisponibles = new AtomicInteger(6);
 public static AtomicInteger supervisoresDisponibles = new AtomicInteger(3);
 public static AtomicInteger directoresDisponibles = new AtomicInteger(1);
@@ -54,7 +54,7 @@ Espero haya logrado expresar claramente los conceptos de Chain of Responsability
 
 A continuación un ejemplo de la respuesta de éste test, cabe recordar que varía según las características de las máquinas:
 
-```java
+```ruby
 Client 1 inicia Llamada...
 Client 0 inicia Llamada...
 Client 3 inicia Llamada...
