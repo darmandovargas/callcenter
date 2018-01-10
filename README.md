@@ -50,6 +50,6 @@ public static AtomicInteger supervisoresDisponibles = new AtomicInteger(3);
 public static AtomicInteger directoresDisponibles = new AtomicInteger(1);
 ```
 
-Espero haya logrado expresar claramente los conceptos de Chain of Responsability, hilos que comparten recursos comunes.
+Espero haya logrado expresar claramente los conceptos de Chain of Responsability y de hilos concurrentes que comparten recursos comunes.
 
 Feliz día !!
