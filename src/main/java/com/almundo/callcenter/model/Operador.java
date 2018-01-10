@@ -1,5 +1,11 @@
 package com.almundo.callcenter.model;
 
+/**
+ * Clase que extiende de Employee quien es la que procesa la llamada 
+ * de manera recursiva y escala la cadena de mando con base en la disponibilidad 
+ * @author Diego
+ *
+ */
 public class Operador extends Employee{
 	
 	public Operador(String nam, String rol, Integer ran){

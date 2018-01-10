@@ -44,7 +44,7 @@ public abstract class Employee {
 	    			case 3: if(directoresAvailable.get()>0)disp.decrementarDirectoresDisponibles(); break;
 	    		}
             	System.out.println("El empleado '" + this.getRole().toUpperCase() + "' llamado " + this.getName() + " ha tomado la llamada con el cliente: "+callRequest.getClientName()+". operadoresAvailable:"+operadoresAvailable.get()+", supervisoresAvailable:"+supervisoresAvailable.get()+", directoresAvailable: "+directoresAvailable.get());
-            	//disp.removeLlamadaEnEspera(callRequest.getClientName());
+            	disp.removeLlamadaEnEspera(callRequest.getClientName());
             	TimeUnit.SECONDS.sleep(callRequest.getDuration());
             	switch(this.getRank()){
 	    			case 1: disp.incrementarOperadoresDisponibles(); break;
@@ -87,7 +87,7 @@ public abstract class Employee {
         	}else{
         		this.processCallRequest(callRequest, operadoresAvailable, supervisoresAvailable, directoresAvailable, disp);
         	}*/
-        	//disp.putLlamadaEnEspera(callRequest.getClientName(), callRequest);
+        	disp.putLlamadaEnEspera(callRequest.getClientName(), callRequest);
         	
         }
     }

@@ -1,7 +1,13 @@
 package com.almundo.callcenter.model;
-
+/**
+ * Esta clase representa la petición de llamada de parte del cliente
+ * @author Diego
+ *
+ */
 public class CallRequest {
+	// Nombre del cliente
 	private String clientName;
+	// Duración de la llamada
 	private Integer duration;
 	
 	public CallRequest (String cn, Integer dur){
