@@ -138,4 +138,4 @@ Terminando la llamada con 'OPERADOR' llamado Empleado: Client 18 con cliente: Cl
 NO HAY LLAMADAS EN COLA, FIN DE LA EJECUCIÓN !
 ```
 
-Feliz día !!
+Este ejemplo se realizó con 21 llamadas concurrentes.
