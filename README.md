@@ -19,8 +19,9 @@ Cada llamada puede durar un tiempo aleatorio entre 5 y 10
 segundos.
 Debe tener un test unitario donde lleguen 10 llamadas.
 
-## Requerimientos de ejecución
+## Requerimiento de Java 1.8
 Creado en Spring Tool Suite, por lo que debe soportar todos los eclipses para ser importado, o se puede usar el .jar para ejecutarse.
+
 Java 1.8.
 
 ### Diagrama de Clases
