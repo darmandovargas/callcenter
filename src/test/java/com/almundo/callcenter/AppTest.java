@@ -36,6 +36,6 @@ public class AppTest
     public void testApp()
     {
     	Dispatcher callHandler = new Dispatcher();
-    	assertTrue(callHandler.dispatchCall(20));
+    	assertTrue(callHandler.dispatchCall(21));
     }
 }
