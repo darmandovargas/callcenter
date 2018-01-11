@@ -60,29 +60,29 @@ Espero haya logrado expresar claramente los conceptos de Chain of Responsability
 A continuación un ejemplo de la respuesta de éste test, cabe recordar que varía según las características de las máquinas:
 
 ```java
-Client 1 inicia Llamada...
-Client 5 inicia Llamada...
-Client 3 inicia Llamada...
-Client 6 inicia Llamada...
 Client 0 inicia Llamada...
-Client 2 inicia Llamada...
-Client 7 inicia Llamada...
 Client 4 inicia Llamada...
-El empleado 'SUPERVISOR' llamado Empleado # 7 ha tomado la llamada con el cliente: Client 7. operadoresAvailable:0, supervisoresAvailable:2, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado # 2 ha tomado la llamada con el cliente: Client 2. operadoresAvailable:0, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado # 0 ha tomado la llamada con el cliente: Client 0. operadoresAvailable:1, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado # 6 ha tomado la llamada con el cliente: Client 6. operadoresAvailable:2, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado # 5 ha tomado la llamada con el cliente: Client 5. operadoresAvailable:4, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado # 1 ha tomado la llamada con el cliente: Client 1. operadoresAvailable:4, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado # 3 ha tomado la llamada con el cliente: Client 3. operadoresAvailable:3, supervisoresAvailable:3, directoresAvailable: 1
-Client 9 inicia Llamada...
+Client 3 inicia Llamada...
+Client 2 inicia Llamada...
+Client 1 inicia Llamada...
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 2. operadoresAvailable:2, supervisoresAvailable:3, directoresAvailable: 1
+Client 5 inicia Llamada...
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 5. operadoresAvailable:0, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 3. operadoresAvailable:3, supervisoresAvailable:3, directoresAvailable: 1
+Client 6 inicia Llamada...
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 0. operadoresAvailable:4, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 4. operadoresAvailable:4, supervisoresAvailable:3, directoresAvailable: 1
+Client 7 inicia Llamada...
+El empleado 'SUPERVISOR ha tomado la llamada con el cliente: Client 6. operadoresAvailable:0, supervisoresAvailable:2, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 1. operadoresAvailable:1, supervisoresAvailable:3, directoresAvailable: 1
 Client 8 inicia Llamada...
+El empleado 'SUPERVISOR ha tomado la llamada con el cliente: Client 7. operadoresAvailable:0, supervisoresAvailable:1, directoresAvailable: 1
+Client 9 inicia Llamada...
+El empleado 'SUPERVISOR ha tomado la llamada con el cliente: Client 8. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 1
+El empleado 'DIRECTOR ha tomado la llamada con el cliente: Client 9. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 0
 Client 10 inicia Llamada...
-El empleado 'SUPERVISOR' llamado Empleado # 4 ha tomado la llamada con el cliente: Client 4. operadoresAvailable:0, supervisoresAvailable:1, directoresAvailable: 1
-Client 11 inicia Llamada...
 RESPUESTA Client 10 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
-El empleado 'DIRECTOR' llamado Empleado # 8 ha tomado la llamada con el cliente: Client 8. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 0
-El empleado 'SUPERVISOR' llamado Empleado # 9 ha tomado la llamada con el cliente: Client 9. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 1
+Client 11 inicia Llamada...
 RESPUESTA Client 11 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
 Client 12 inicia Llamada...
 RESPUESTA Client 12 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
@@ -100,46 +100,46 @@ Client 18 inicia Llamada...
 RESPUESTA Client 18 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
 Client 19 inicia Llamada...
 RESPUESTA Client 19 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
-ESPERANDO 20 SEGUNDOS PARA REVISAR COLA PENDIENTE...
+ESPERANDO 10 SEGUNDOS PARA REVISAR COLA PENDIENTE...
 Client 20 inicia Llamada...
 RESPUESTA Client 20 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
-Terminando la llamada con 'OPERADOR' llamado Empleado # 1 con cliente: Client 1. Duración: 5 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado # 6 con cliente: Client 6. Duración: 5 segundos
-Terminando la llamada con 'SUPERVISOR' llamado Empleado # 4 con cliente: Client 4. Duración: 5 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado # 5 con cliente: Client 5. Duración: 6 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado # 2 con cliente: Client 2. Duración: 6 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado # 0 con cliente: Client 0. Duración: 6 segundos
-Terminando la llamada con 'SUPERVISOR' llamado Empleado # 7 con cliente: Client 7. Duración: 7 segundos
-Terminando la llamada con 'DIRECTOR' llamado Empleado # 8 con cliente: Client 8. Duración: 7 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado # 3 con cliente: Client 3. Duración: 7 segundos
-Terminando la llamada con 'SUPERVISOR' llamado Empleado # 9 con cliente: Client 9. Duración: 7 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 3. Duración: 5 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 1. Duración: 5 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 5. Duración: 5 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 2. Duración: 5 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 4. Duración: 6 segundos
+Terminando la llamada con 'SUPERVISOR con cliente: Client 7. Duración: 6 segundos
+Terminando la llamada con 'DIRECTOR con cliente: Client 9. Duración: 7 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 0. Duración: 8 segundos
+Terminando la llamada con 'SUPERVISOR con cliente: Client 8. Duración: 9 segundos
+Terminando la llamada con 'SUPERVISOR con cliente: Client 6. Duración: 9 segundos
 EJECUTANDO LLAMADAS EN ESPERA...
-El empleado 'OPERADOR' llamado Empleado: Client 20 ha tomado la llamada con el cliente: Client 20. operadoresAvailable:5, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado: Client 13 ha tomado la llamada con el cliente: Client 13. operadoresAvailable:4, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado: Client 12 ha tomado la llamada con el cliente: Client 12. operadoresAvailable:3, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado: Client 11 ha tomado la llamada con el cliente: Client 11. operadoresAvailable:2, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado: Client 10 ha tomado la llamada con el cliente: Client 10. operadoresAvailable:1, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'OPERADOR' llamado Empleado: Client 17 ha tomado la llamada con el cliente: Client 17. operadoresAvailable:0, supervisoresAvailable:3, directoresAvailable: 1
-El empleado 'SUPERVISOR' llamado Empleado Client 16 ha tomado la llamada con el cliente: Client 16. operadoresAvailable:0, supervisoresAvailable:2, directoresAvailable: 1
-El empleado 'SUPERVISOR' llamado Empleado Client 15 ha tomado la llamada con el cliente: Client 15. operadoresAvailable:0, supervisoresAvailable:1, directoresAvailable: 1
-El empleado 'SUPERVISOR' llamado Empleado Client 14 ha tomado la llamada con el cliente: Client 14. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 1
-El empleado 'DIRECTOR' llamado Empleado Client 19 ha tomado la llamada con el cliente: Client 19. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 0
-ESPERANDO 20 SEGUNDOS PARA REVISAR COLA PENDIENTE...
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 20. operadoresAvailable:5, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 13. operadoresAvailable:4, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 12. operadoresAvailable:3, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 11. operadoresAvailable:2, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 10. operadoresAvailable:1, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 17. operadoresAvailable:0, supervisoresAvailable:3, directoresAvailable: 1
+El empleado 'SUPERVISOR ha tomado la llamada con el cliente: Client 16. operadoresAvailable:0, supervisoresAvailable:2, directoresAvailable: 1
+El empleado 'SUPERVISOR ha tomado la llamada con el cliente: Client 15. operadoresAvailable:0, supervisoresAvailable:1, directoresAvailable: 1
+El empleado 'SUPERVISOR ha tomado la llamada con el cliente: Client 14. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 1
+El empleado 'DIRECTOR ha tomado la llamada con el cliente: Client 19. operadoresAvailable:0, supervisoresAvailable:0, directoresAvailable: 0
+ESPERANDO 10 SEGUNDOS PARA REVISAR COLA PENDIENTE...
 RESPUESTA Client 18 POR FAVOR ESPERE EN LA LÍNEA PARA SER ATENDIDO, NUESTROS AGENTES ESTÁN OCUPADOS, REMITIREMOS SU LLAMADA AL PRIMER AGENTE DISPONIBLE...
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 17 con cliente: Client 17. Duración: 5 segundos
-Terminando la llamada con 'DIRECTOR' llamado Empleado Client 19 con cliente: Client 19. Duración: 5 segundos
-Terminando la llamada con 'SUPERVISOR' llamado Empleado Client 16 con cliente: Client 16. Duración: 5 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 12 con cliente: Client 12. Duración: 6 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 10 con cliente: Client 10. Duración: 6 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 13 con cliente: Client 13. Duración: 7 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 11 con cliente: Client 11. Duración: 8 segundos
-Terminando la llamada con 'SUPERVISOR' llamado Empleado Client 15 con cliente: Client 15. Duración: 8 segundos
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 20 con cliente: Client 20. Duración: 9 segundos
-Terminando la llamada con 'SUPERVISOR' llamado Empleado Client 14 con cliente: Client 14. Duración: 9 segundos
+Terminando la llamada con 'SUPERVISOR con cliente: Client 15. Duración: 5 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 11. Duración: 6 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 10. Duración: 7 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 20. Duración: 7 segundos
+Terminando la llamada con 'SUPERVISOR con cliente: Client 14. Duración: 7 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 13. Duración: 8 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 17. Duración: 8 segundos
+Terminando la llamada con 'OPERADOR con cliente: Client 12. Duración: 8 segundos
+Terminando la llamada con 'DIRECTOR con cliente: Client 19. Duración: 8 segundos
+Terminando la llamada con 'SUPERVISOR con cliente: Client 16. Duración: 8 segundos
 EJECUTANDO LLAMADAS EN ESPERA...
-ESPERANDO 20 SEGUNDOS PARA REVISAR COLA PENDIENTE...
-El empleado 'OPERADOR' llamado Empleado: Client 18 ha tomado la llamada con el cliente: Client 18. operadoresAvailable:5, supervisoresAvailable:3, directoresAvailable: 1
-Terminando la llamada con 'OPERADOR' llamado Empleado: Client 18 con cliente: Client 18. Duración: 9 segundos
+ESPERANDO 10 SEGUNDOS PARA REVISAR COLA PENDIENTE...
+El empleado 'OPERADOR ha tomado la llamada con el cliente: Client 18. operadoresAvailable:5, supervisoresAvailable:3, directoresAvailable: 1
+Terminando la llamada con 'OPERADOR con cliente: Client 18. Duración: 6 segundos
 NO HAY LLAMADAS EN COLA, FIN DE LA EJECUCIÓN !
 ```
 
