@@ -31,7 +31,7 @@ Java 1.8.
 ![alt text](https://raw.githubusercontent.com/darmandovargas/callcenter/master/Diagrama%20de%20Casos%20de%20Uso%20Callcenter%20almundo.com%20.png)
 
 ### Unit Test
-El test unitario está dentro del test de la aplicación, allí se crea una instancia de Dispatcher y se indica cuantas llamadas concurrentes deberá procesar. Cuando se corre el test no se termina el hilo, asumo que por un tema del JUnit, por lo que el test es solo desmostración de TDD y como sería su funcionamiento para el test exitoso de la clase Dispatcher, si se desea ver el funcionamiento empleto se deberá ejecutar como una aplicación java el App principal de la aplicación.
+El test unitario está dentro del test de la aplicación, allí se crea una instancia de Dispatcher y se indica cuantas llamadas concurrentes deberá procesar. El test es solo desmostración de TDD y como sería su funcionamiento para el test exitoso de la clase Dispatcher.
 
 ### Breve Descripción de lo que se hizo
 Se hizo una revisión exaustiva del probléma clásico de Java, el cual es bastante similar al del ejercicio, con lo que se determinó que la importancia del test estaba en la evaluación del patrón arquitectónico Chain of Resonsability, por medio del cual hay una clase abastracta llamada Employee la cual tiene métodos abstráctos y métodos definidos, como el de setSuccessor el cual asigna quien sigue ascendentemente en la cadena de mando, de ésta clase abstracta extienden las diferentes entidades de la cadena de mando que son Operador, Supervisor y Director, por lo que su construcción debe ser mutuamente dependientes para que se pueda escalar la llamada según criterios de disponibilidad de los operadores así:
