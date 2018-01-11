@@ -43,7 +43,7 @@ public abstract class Employee {
 	    			case 2: if(supervisoresAvailable.get()>0)disp.decrementarSupervisoresDisponibles(); break;
 	    			case 3: if(directoresAvailable.get()>0)disp.decrementarDirectoresDisponibles(); break;
 	    		}
-            	System.out.println("El empleado '" + this.getRole().toUpperCase() + "' llamado " + this.getName() + " ha tomado la llamada con el cliente: "+callRequest.getClientName()+". operadoresAvailable:"+operadoresAvailable.get()+", supervisoresAvailable:"+supervisoresAvailable.get()+", directoresAvailable: "+directoresAvailable.get());
+            	System.out.println("El empleado '" + this.getRole().toUpperCase() + " ha tomado la llamada con el cliente: "+callRequest.getClientName()+". operadoresAvailable:"+operadoresAvailable.get()+", supervisoresAvailable:"+supervisoresAvailable.get()+", directoresAvailable: "+directoresAvailable.get());
             	disp.removeLlamadaEnEspera(callRequest.getClientName());
             	TimeUnit.SECONDS.sleep(callRequest.getDuration());
             	switch(this.getRank()){
@@ -51,7 +51,7 @@ public abstract class Employee {
 	    			case 2: disp.incrementarSupervisoresDisponibles(); break;
 	    			case 3: disp.incrementarDirectoresDisponibles(); break;
 	    		}
-    			System.out.println("Terminando la llamada con '" + this.getRole().toUpperCase() + "' llamado " + this.getName() + " con cliente: " + callRequest.getClientName() + ". Duración: " + callRequest.getDuration() + " segundos" );
+    			System.out.println("Terminando la llamada con '" + this.getRole().toUpperCase() + " con cliente: " + callRequest.getClientName() + ". Duración: " + callRequest.getDuration() + " segundos" );
     			
     			
     			

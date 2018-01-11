@@ -126,9 +126,9 @@ public class Dispatcher {
 		// o trabajando con el resultado de submit para obtener la instancia Future con el resultado de la tarea, se puede 
 		// mejorar mucho aún pero es un buen inicio hacia una solución optima. 
 		while(!this.listaLlamadasEnEspera.isEmpty()){
-			System.out.println("ESPERANDO 20 SEGUNDOS PARA REVISAR COLA PENDIENTE...");
+			System.out.println("ESPERANDO 10 SEGUNDOS PARA REVISAR COLA PENDIENTE...");
 			try {
-				TimeUnit.SECONDS.sleep(20);
+				TimeUnit.SECONDS.sleep(10);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -136,6 +136,7 @@ public class Dispatcher {
 		
 			if(!this.listaLlamadasEnEspera.isEmpty()){
 				System.out.println("EJECUTANDO LLAMADAS EN ESPERA...");
+				int counter = 0;
 				//this.listaLlamadasEnEspera.forEach((k,v) -> (service.submit(() -> operador.processCallRequest(v, operadoresDisponibles, supervisoresDisponibles, directoresDisponibles, this))));//System.out.println("Item : " + k + " Count : " + v)
 				for (Map.Entry<String, CallRequest> entry : listaLlamadasEnEspera.entrySet()) {
 					//System.out.println("Item : " + entry.getKey() + " Count : " + entry.getValue());
