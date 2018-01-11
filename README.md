@@ -19,6 +19,10 @@ Cada llamada puede durar un tiempo aleatorio entre 5 y 10
 segundos.
 Debe tener un test unitario donde lleguen 10 llamadas.
 
+## Requerimientos de ejecución
+Creado en Spring Tool Suite, por lo que debe soportar todos los eclipses para ser importado, o se puede usar el .jar para ejecutarse.
+Java 1.8.
+
 ### Diagrama de Clases
 ![alt text](https://raw.githubusercontent.com/darmandovargas/callcenter/master/Diagrama%20de%20Clases%20Callcenter%20almundo.com%20.png)
 
